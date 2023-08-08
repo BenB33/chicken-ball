@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-color: #fcf3d2;
   }
   h1 {
     font-size: 36px;
     margin: 20px;
   }
   #main-image {
+    max-width: 900px;
     margin: 20px;
   }
   #counter {
