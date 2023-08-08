@@ -14,5 +14,5 @@
 
   var song = new Audio('song.mp3')
   document.body.addEventListener('click', function() { 
-    //song.play()
+    song.play()
    });
