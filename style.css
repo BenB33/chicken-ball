@@ -1,28 +1,53 @@
+@font-face {
+  font-family: 'Chinese Dragon';
+  src: url('assets/ChineseDragon-Regular.woff2') format('woff2'),
+      url('assets/ChineseDragon-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    overflow-x: hidden;
-    background-color: #fcf3d2;
-    padding-bottom: 40px;
-  }
-  h1 {
-    font-size: 36px;
-    margin: 20px;
-  }
-  #main-image {
-    width: 30%;
-    height: auto;
-    margin: 20px;
-  }
-  #counter {
-    font-size: 20px;
-    margin: 20px;
-  }
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #fcf3d2;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Chinese Dragon';
+  font-weight: normal;
+  font-size: 69px;
+  margin: 20px;
+}
+
+#main-image {
+  width: 30%;
+  height: auto;
+}
+
+#counter {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
