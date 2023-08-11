@@ -1,5 +1,5 @@
   // Set the date since which you want to count days (format: year, month - 1, day)
-  const startDate = new Date(2023, 7, 5); // January 1, 2023
+  const startDate = new Date(2023, 7, 11); // January 1, 2023
 
   function updateDaysSince() {
     const now = new Date();
