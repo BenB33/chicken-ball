@@ -1,6 +1,9 @@
-  // Set the date since which you want to count days (format: year, month - 1, day)
-  const startDate = new Date(2023, 7, 11); // January 1, 2023
+  // Date of the last chinese Kalum ordered (format: year, month - 1, day)
+  const startDate = new Date(2023, 7, 11);
+  const numRaindrops = 50;
+  const content = document.getElementById('content');
 
+  // Date logic
   function updateDaysSince() {
     const now = new Date();
     const timeDifference = now - startDate;
@@ -11,10 +14,26 @@
 
   updateDaysSince();
 
-
+  
+  // Song functionality
   var song = new Audio('assets/song.mp3')
   document.body.addEventListener('click', function() { 
     song.play()
+    startRain()
    });
+  
 
-   
+  // Raining chickenball logic
+  function createFallingChickenball() {
+    const raindrop = document.createElement('div');
+    raindrop.className = 'chickenball';
+    raindrop.style.left = `${Math.random() * 100}vw`;
+    raindrop.style.animationDuration = `${Math.random() * 2 + 1}s`;
+    content.appendChild(raindrop);
+  }
+
+  function startRain() {
+    for (let i = 0; i < numRaindrops; i++) {
+      createFallingChickenball();
+    }
+  }

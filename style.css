@@ -11,6 +11,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 h1 {
@@ -50,4 +52,21 @@ h1 {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+
+/* Raining Chickenball Effect */
+.chickenball {
+  position: absolute;
+  width: 25px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  background-image: url('images/chickenball.png');
+  background-size: cover;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+      transform: translateY(100vh);
+  }
 }
