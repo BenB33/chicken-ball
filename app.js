@@ -1,5 +1,5 @@
   // Date of the last chinese Kalum ordered (format: year, month - 1, day)
-  const startDate = new Date(2023, 8, 8);
+  const startDate = new Date(2023, 9, 10);
   const numRaindrops = 50;
   const content = document.getElementById('content');
 
