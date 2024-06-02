@@ -1,13 +1,14 @@
 @font-face {
   font-family: 'Chinese Dragon';
   src: url('assets/ChineseDragon-Regular.woff2') format('woff2'),
-      url('assets/ChineseDragon-Regular.woff') format('woff');
+    url('assets/ChineseDragon-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 h1 {
@@ -43,9 +43,22 @@ a {
   height: auto;
 }
 
+#scare-image {
+  display: none
+}
+
 #counter {
   font-size: 20px;
   margin: 20px;
+}
+
+#hidden-input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 
 .footer {
@@ -62,8 +75,10 @@ a {
 /* Raining Chickenball Effect */
 .chickenball {
   position: absolute;
-  width: 25px; /* Adjust as needed */
-  height: 20px; /* Adjust as needed */
+  width: 25px;
+  /* Adjust as needed */
+  height: 20px;
+  /* Adjust as needed */
   background-image: url('images/chickenball.png');
   background-size: cover;
   animation: fall linear infinite;
@@ -71,6 +86,6 @@ a {
 
 @keyframes fall {
   to {
-      transform: translateY(100vh);
+    transform: translateY(100vh);
   }
 }
