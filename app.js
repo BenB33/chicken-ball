@@ -1,9 +1,5 @@
 // Date of the last chinese Kalum ordered (format: year, month - 1, day)
-<<<<<<< HEAD
 const startDate = new Date(2026, 9, 3);
-=======
-const startDate = new Date(2026, 1, 20);
->>>>>>> a61df4c04d0233ef7f5166941d75b54d02fb269f
 const numRaindrops = 50;
 const content = document.getElementById('content');
 const title = document.getElementById('title')
@@ -12,6 +8,7 @@ const scarePicture = document.getElementById('scare-image')
 var chineseSong = new Audio('assets/song.mp3')
 var scareAudio = new Audio('assets/scare.mp3')
 const hiddenInput = document.getElementById('hidden-input')
+const adminButton = document.getElementById('adminButton')
 
 const phrase = 'chickenball'
 let typedLetters = ''
@@ -73,4 +70,3 @@ function startRain() {
 }
 
 updateDaysSince();
-
